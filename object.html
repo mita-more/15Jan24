@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Object</title>
+    </head>
+    <body>
+        <script>
+            /*
+            {
+                property : value,
+                property : value,
+                functions
+            }
+            */
+            var students = {
+                name : 'Nandan',
+                surname :'Kabra',
+                address  : 'Jawad',
+                friends : ['Anil', 'Ritik', 'Avinash'] ,
+                teacher :[{
+                    name :'Anil',
+                    contact :' 9876543210'
+                }, {
+                    name :'Pooja c',
+                    contact :'8765432109',
+                }]
+
+            };
+
+            //  sister = {
+            //         name : 'Saloni',
+            //         ' contact' :'9876543209',
+            //         deep nested opject
+            //         family, deep,  
+
+
+            // }
+
+            console.log(students.name);
+            console.log( students.surname);
+            console.log( students.address);
+            console.log( students.friends[2]);
+            console.log( students.friends.length);
+            console.log( students.teacher.length + ' teacher');
+            // console.log( students.teacher[0].contact);
+            for( var i = 0; i < students.teacher.length; i++){
+                console.log(students.teacher[i].name+' '+ students.teacher[i].contact+'')
+            }
+
+        </script>   
+    </body>
+</html>

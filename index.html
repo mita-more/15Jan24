@@ -18,7 +18,69 @@
         
        <script>
         
+        //function defination
+        function myfunctionB (n){
+            console.log('Hello '+ n + ' How are you');   
+            // function retuning somthing
+            return n;
+        }
 
-       </script>
+        // myfunctionB('Pooja Rane');
+
+        let x = myfunctionB('Pooja Rane');
+
+        console.log(x);
+
+        let myfunctionC = (name) =>
+            {
+                console.log('Hello ,' + name + ' How are you?');
+            }     
+        
+            myfunctionC('Smita Mane');
+
+
+            let a = [ 'Pooja', 'Anvi','Seema','Rohini'];
+
+            console.log(a.length);
+
+            let b = [...a, 'Rahul', 'Ajay','Abhi','Shiv' ];
+
+           
+            console.log(b);
+            console.log(b.length);
+
+
+
+            const materials = ['Hydrogen' , 'Helim', 'Lithium', 'Beryllim'];
+
+            console.log(materials.map((material) => materials.length));
+
+            let a1 = ['Hello Good Morning']
+            let x1 = ['an',...a1,'arrow',...a1];
+            let y = [...x1, 'a arrows'];
+
+            let z = [...y, 'jjj arrow'];
+
+            let z2 = [...z,'kkk'];
+
+            console.log(x1);
+            console.log(y);
+            console.log(z);
+            console.log(z2);
+
+            var paragraph = '';
+            for(var i = 0; i <= z2; i++ ){
+                console.log(z2[i]);
+             //   paragraph = paragraph + z2[i] + '';
+             paragraph += z2[i] + '';
+
+            }
+            console.log(paragraph);
+            
+
+            x = x + 10 ;
+            
+            </script>
+            
     </body>
 </html>
