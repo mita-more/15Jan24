@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Object</title>
+        <style>
+            .container{
+                /* width: 350px;
+                height: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center; */
+            }
+            .fanbox{
+                width: 300px;
+                height: 300px;
+                background-image: url(https://picsum.photos/id/870/200/300?grayscale&blur=2);
+                background-repeat:no-repeat;
+                /* margin: 10px auto; */
+               animation-name: fan;
+               animation-duration: 1s;
+               animation-timing-function: linear;
+               animation-iteration-count: infinite;
+               animation-play-state: paused;
+            }
+
+            @keyframes fan {
+                0%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(359deg);
+                }
+            }
+            .button-txt{
+                /* background-color: aqua; */
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class ="container">
+    <div class="fanbox" id="fanboxs" data-anil="myFanbox"></div>
+    <div class="button-txt"> 
+        <button onclick="startFun(0)">Stop</button>
+        <button onclick="startFun(1)">1</button>
+        <button onclick="startFun(2)">2</button>
+        <button onclick="startFun(3)">3</button>
+    
+    </div>
+</div>
+    <script>
+
+        function x(elem){
+            return document.querySelector(elem);
+        }
+        //function define
+        // function stopFun(s){ // s is agrgument
+        //      //function body
+        //     // alert('stop 1');
+        //      //function return
+        // }
+        //function define
+       function startFun(speed){
+
+        if(speed == 0){
+            x('.fanbox').style.animationPlayState ='paused';
+        }
+          else if(speed == 1){
+            x('[data-anil = "myFanbox"]').style.animationPlayState = 'running';
+            x('[data-anil = "myFanbox"]').style.animationDuration = '0.9s'; 
+
+          } else if( speed == 2){
+            x('[data-anil = "myFanbox"]').style.animationPlayState = 'running';
+            x('[data-anil = "myFanbox"]').style.animationDuration = '0.5s';  
+          }
+          else {
+            // alert('3');
+            document.getElementById('fanboxs').style.animationPlayState = 'running';
+            document.getElementById('fanboxs').style.animationDuration = '0.1s';  
+          }
+
+       }    
+
+    </script>
+
+</body>
+
+</html>

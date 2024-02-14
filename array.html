@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Object</title>
+    </head>
+    <body>
+        <script>
+            let myObject = {
+                aa :'hello AA',
+                // BB :'hello from BB',
+
+                myFunctionA:function(){
+                    console.log( this.aa);
+                },
+
+            
+
+                myFunctionB:(meg) => {
+                    console.log( meg);
+                },
+
+                // myFunctionB: (meg) =>{
+                //     console.log(this.BB + meg);
+                // }
+
+            };
+            myObject.myFunctionA();
+            myObject.myFunctionB( 'hello from BB ');
+
+        </script>
+    </body>
+</html>

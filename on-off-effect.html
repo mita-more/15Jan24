@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Object</title>
+   
+
+   
+    </head>
+    <body>
+        <!-- https://picsum.photos/seed/picsum/200/300 -->
+        <img id="myimg" width="200" src="https://picsum.photos/200/300?grayscale">
+        <button onclick="clickMe('on')">On</button>
+        <button onclick="clickMe('off')">Off</button>
+        <!-- <button onClick="clickMe2()">Off</button> -->
+        <script>
+            function clickMe (state){
+               // alert('ok');
+               //object.member.member.member
+            //    alert(state);
+               if( state == 'on'){
+                document.body.style.backgroundColor='yellow';
+                document.getElementById('myimg').setAttribute('src','https://picsum.photos/200/300?grayscale');
+            } else{
+                document.body.style.backgroundColor='black';
+                document.getElementById('myimg').setAttribute('src','https://picsum.photos/200/300');
+            }
+               
+          
+            }
+
+            // function clickMe2 (){
+            //    // alert('ok');
+            //    //object.member.member.member
+            //    document.body.style.backgroundColor='black';
+                
+            // }
+        </script>
+    </body>
+</html>
